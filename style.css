@@ -1,0 +1,209 @@
+body {
+    background-color: rgba(0, 47, 117, 0.795);
+    background-image: url(./FS-Project-Weather-App/mountains.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+.mainBox{
+    color: rgb(224, 224, 224);
+    margin: 20px auto;
+    width: 68%;
+    height: 650px;
+    background-color: rgba(4, 29, 75, 0.623);
+    /* background-image: url(./FS-Project-Weather-App/starry-night.jpg);
+    background-repeat: 0 repeat;
+    background-size: cover;
+    color: white; */
+    /* opacity: .10; */
+    border: none;
+    border-radius: 32px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.locationBox {
+    height: 60px;
+    /* background-color: rgb(6, 37, 65); */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    padding: 30px 60px 80px 30px;
+}
+
+.current-location{
+    cursor: pointer;
+}
+
+.input-wrapper { 
+    display: flex;
+    align-items: center;
+} 
+
+.input-wrapper input { 
+    padding:0 40px 0 40px; 
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    /* background-color: rgba(240, 240, 240, 0.884); */
+} 
+
+.input-wrapper input:focus {
+    outline:none;
+    background-color: rgb(232, 241, 255);
+    box-shadow: none;
+}
+
+.input-div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-div{
+    display: flex;
+    gap: 5px;
+}
+
+.weather-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px 0 80px
+}
+
+.temperature-box {
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+
+.temperature{
+    font-size: 100px;
+}
+
+.temperature-details{
+    list-style: none;
+    line-height: 28px;
+}
+
+.weather-details{
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 150px;
+}
+
+
+.weather-info{
+    line-height: 28px;
+    list-style:none;
+   
+}
+
+li.feels-like {
+    display: flex;
+    align-items: center;
+}
+
+li.humidity {
+    display: flex;
+    align-items: center;
+}
+
+.weather-cards{
+    width: 90%;
+    height: 220px;
+    background-color: rgba(23, 35, 90, 0.788);
+    background: linear-gradient(180deg,  rgb(17, 27, 71) 0%, rgba(0,0,0,0) 80%);
+    display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  border-radius: 30px;
+  margin-left: 5%;
+}
+
+.weather-cards div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconOne, .iconTwo, .iconThree, .iconFour {
+    width: 70px;
+}
+
+@media screen and (max-width: 768px){
+    .weather-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        height: max-content;
+        gap: 5px;
+    }
+
+    .weather-cards div{
+        width: 100%;
+       
+    }
+
+    .mainBox{
+        width: 95%;
+        height: 120vh;
+    }
+
+    .weather-box{
+        display: grid;
+        justify-content: center;
+    }
+
+    .city-name{
+        font-size: 20px;
+    }
+
+    .temperature-box {
+        justify-content: center;
+        height: 130px;
+    }
+
+    .input-wrapper input{
+        padding: 0 10px 0 10px;
+    }
+
+    .locationBox{
+        padding: 80px 15px 0px 15px;
+        flex-direction: column-reverse;
+        display:flex;
+    }
+
+    .temperature{
+        font-size: 60px;
+    }
+
+    .img{
+        width: 100px;
+    }
+
+    body{
+        background-size: cover;
+    height: 130vh;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .weather-box{
+        padding: 0 15px 0 10px;
+    }
+}
